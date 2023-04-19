@@ -324,7 +324,7 @@ class E2eTests {
     @Test
     @Sql(value = {"/admin-create-before.sql", "/user1-create-before.sql","/user1-product1-create-before.sql"}, executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
     @Sql(value = {"/user1-create-after.sql"}, executionPhase = Sql.ExecutionPhase.AFTER_TEST_METHOD)
-    @WithUserDetails("user1@mail.ru")
+    @WithUserDetails("admin@mail.ru")
     public void mainTest8() throws Exception{
 
         this.mockMvc.perform(formLogin().user("admin@mail.ru").password("123"))
