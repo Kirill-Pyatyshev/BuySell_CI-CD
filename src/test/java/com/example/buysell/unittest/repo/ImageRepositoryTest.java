@@ -1,14 +1,11 @@
 package com.example.buysell.unittest.repo;
 
-import com.example.buysell.models.User;
 import com.example.buysell.repositories.ImageRepository;
-import com.example.buysell.repositories.UserRepository;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
