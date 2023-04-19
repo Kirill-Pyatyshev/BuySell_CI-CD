@@ -1,0 +1,16 @@
+.product:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.name-user-after-login {
+    text-align: right;
+    padding-right: 5px;
+    margin-left: auto;
+    color: white;
+}
+
+.product-link {
+    color: #000 !important;
+    text-decoration: none
+}
