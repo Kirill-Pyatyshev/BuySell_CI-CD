@@ -15,8 +15,5 @@ jobs:
         with:
           java-version: '18'
 
-      - name: Build with Maven
-        run: mvn -B package --file pom.xml
-
       - name: Run tests
         run: mvn test --file pom.xml
