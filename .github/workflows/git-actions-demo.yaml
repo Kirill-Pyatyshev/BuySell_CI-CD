@@ -15,10 +15,10 @@ jobs:
         with:
           java-version: '11'
 
-      - name: Build with Maven
-        run: mvn -B package --file pom.xml
+      - name: Build app
+        run: mvn clean package
 
       - name: Run tests
-        run: mvn test --file pom.xml
+        run: mvn test
 
 
