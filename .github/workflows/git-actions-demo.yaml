@@ -15,8 +15,5 @@ jobs:
         with:
           java-version: '19'
 
-      - name: Build with Maven
-        run: mvn clear install
-
       - name: Run tests
-        run: mvn test --file pom.xml
+        run: mvn test
