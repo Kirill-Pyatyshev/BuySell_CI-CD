@@ -244,6 +244,19 @@ public class ProductServiceTest {
     }
 
     @Test
+    public void getUserByUserTest(){
+        User user = new User();
+        user.setName("TestUser1");
+        user.setEmail("testuser1@mail.ru");
+        Principal principal = (UserPrincipal) () -> "TestUser1";
+
+        Mockito.doReturn(user).when(userRepository).findByEmail(principal.getName());
+
+        Assert.assertEquals(productService.getUserByPrincipal(principal), user);
+
+    }
+
+    @Test
     public void getUserByPrincipalFailTest(){
         Assert.assertEquals(productService.getUserByPrincipal(null), new User());
     }
