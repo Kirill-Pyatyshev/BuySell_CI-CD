@@ -1,5 +1,7 @@
 name: Java Test CI
 
+image: maven:3.8-openjdk-19
+
 on: [push]
 
 jobs:
