@@ -13,10 +13,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: '18'
-
-      - name: Build with Maven
-        run: mvn clear install
+          java-version: '19'
 
       - name: Run tests
         run: mvn test --file pom.xml
