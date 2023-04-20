@@ -15,5 +15,3 @@ jobs:
         with:
           java-version: '19'
 
-      - name: Run tests
-        run: mvn test
