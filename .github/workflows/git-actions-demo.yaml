@@ -8,12 +8,15 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
           java-version: '19'
+
+      - name: Build with Maven
+        run: mvn clear install
 
       - name: Run tests
         run: mvn test --file pom.xml
